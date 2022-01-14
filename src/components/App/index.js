@@ -52,7 +52,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<h1>Find out your dinosaur name!</h1>
+			<h1>Find out your cool dinosaur name!</h1>
 			<p>{dinoName}</p>
 			<p>{textInput}</p>
 			{/* <p>{getInitials(textInput)}</p> */}
