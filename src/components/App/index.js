@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Input from "../Input";
+import dinoImages from "../../db";
 
 function App() {
    const [dinoName, setDinoName] = useState("");
@@ -52,32 +53,36 @@ function App() {
       let secondInitial =
          splitUsername[splitUsername.indexOf(" ") + 1].toUpperCase();
 
-      const matchingFirstNames = dinoArray.filter((name) => {
-         return name[0] === firstInitial;
-      });
-      const matchingSecondNames = dinoArray.filter((name) => {
-         return name[0] === secondInitial;
-      });
-      setDinoName(
-         matchingFirstNames[
-            Math.floor(Math.random() * matchingFirstNames.length)
-         ] +
-            " " +
-            matchingSecondNames[
-               Math.floor(Math.random() * matchingSecondNames.length)
-            ]
-      );
-   }
+randomiseNames
+		console.log({ matchingFirstNames });
+		setDinoName(
+			matchingFirstNames[
+				Math.floor(Math.random() * matchingFirstNames.length)
+			] +
+				" " +
+				matchingSecondNames[
+					Math.floor(Math.random() * matchingSecondNames.length)
+				]
+		);
+	}
+	function randomDinoImage() {
+		const index = Math.floor(Math.random() * dinoImages.length);
+		return dinoImages[index];
+	}
 
-   return (
-      <div className="App">
-         <h1>Find out your cool dinosaur name!</h1>
-         <p>{dinoName}</p>
-         <p>{textInput}</p>
-         {/* <p>{getInitials(textInput)}</p> */}
-         <Input getDino={getDino} onChange={handleChange} />
-      </div>
-   );
+	return (
+		<div className="App">
+			<h1>Find out your cool dinosaur name!</h1>
+			<img src={randomDinoImage()} alt="A funny dinosaur" />
+			<p>{dinoName}</p>
+			<p>{textInput}</p>
+			{/* <p>{getInitials(textInput)}</p> */}
+			<Input getDino={getDino} onChange={handleChange} />
+		</div>
+	);
+=======
+
+ main
 }
 
 export default App;
