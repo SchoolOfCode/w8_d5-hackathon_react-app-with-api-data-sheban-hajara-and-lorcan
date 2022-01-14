@@ -41,16 +41,16 @@ function App() {
 
       /// check for three characters "John Smith" of which one has to be a space
       //// no special characters and integers
-      if (textInput.length < 10) {
+      if (textInput.length < 3 || !textInput.includes(" ")) {
          alert(
             "Please enter a valid name - first name and last name with a place inbetween"
          );
       }
+	
       let splitUsername = textInput.split("");
       let firstInitial = splitUsername[0].toUpperCase();
       let secondInitial =
          splitUsername[splitUsername.indexOf(" ") + 1].toUpperCase();
-      console.log(firstInitial, secondInitial);
 
       const matchingFirstNames = dinoArray.filter((name) => {
          return name[0] === firstInitial;
@@ -58,8 +58,6 @@ function App() {
       const matchingSecondNames = dinoArray.filter((name) => {
          return name[0] === secondInitial;
       });
-
-      console.log({ matchingFirstNames });
       setDinoName(
          matchingFirstNames[
             Math.floor(Math.random() * matchingFirstNames.length)
