@@ -2,7 +2,6 @@ const dinoImages = [
 	"https://i.ytimg.com/vi/TxzZUnkTw7k/maxresdefault.jpg",
 	"https://cdn.drawception.com/drawings/WBAMCWYk44.png",
 	"https://i.insider.com/5f08b7e5f34d053f663fbada?width=700",
-	"https://static.wikia.nocookie.net/dumbass-dinosaurs/images/4/4f/Jim.png/revision/latest/scale-to-width-down/2025?cb=20151118152202",
 	"https://media.indiedb.com/images/games/1/56/55218/Cheeky_Dino_-_Get_redrawn.png",
 	"https://www.google.com/url?sa=i&url=https%3A%2F%2Ffineartamerica.com%2Ffeatured%2F1-cute-funny-dinocorn-dinosaur-unicorn-the-perfect-presents.html&psig=AOvVaw11QyNa_DYOUXL5V6qpxwmE&ust=1642260432924000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCODr8IDHsfUCFQAAAAAdAAAAABAa",
 	"https://ih1.redbubble.net/image.2265552562.8651/st,small,507x507-pad,600x600,f8f8f8.u1.jpg",
