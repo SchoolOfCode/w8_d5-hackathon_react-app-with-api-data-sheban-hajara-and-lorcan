@@ -47,7 +47,15 @@ function App() {
 		});
 
 		console.log({ matchingFirstNames });
-		setDinoName(matchingFirstNames[0] + " " + matchingSecondNames[0]);
+		setDinoName(
+			matchingFirstNames[
+				Math.floor(Math.random() * matchingFirstNames.length)
+			] +
+				" " +
+				matchingSecondNames[
+					Math.floor(Math.random() * matchingSecondNames.length)
+				]
+		);
 	}
 
 	return (
