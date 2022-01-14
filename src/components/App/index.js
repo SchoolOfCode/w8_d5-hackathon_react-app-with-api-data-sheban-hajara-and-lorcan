@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Input from "../Input";
+import dinoImages from "../../db";
 
 function App() {
 	const [dinoName, setDinoName] = useState("");
@@ -57,10 +58,15 @@ function App() {
 				]
 		);
 	}
+	function randomDinoImage() {
+		const index = Math.floor(Math.random() * dinoImages.length);
+		return dinoImages[index];
+	}
 
 	return (
 		<div className="App">
 			<h1>Find out your cool dinosaur name!</h1>
+			<img src={randomDinoImage()} alt="A funny dinosaur" />
 			<p>{dinoName}</p>
 			<p>{textInput}</p>
 			{/* <p>{getInitials(textInput)}</p> */}
