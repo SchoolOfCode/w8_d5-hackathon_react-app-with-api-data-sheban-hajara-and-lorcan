@@ -1,6 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Creepster&family=Oswald&family=Press+Start+2P&family=Sarpanch:wght@500&display=swap");
+
 html {
-	background-image: url("https://i.pinimg.com/originals/40/e2/e7/40e2e742bcf0d674b7f209ec20a3490f.jpg");
+	background-image: url("https://cutewallpaper.org/21/jurassic-park-background/Jurassic-World-Backgrounds-Unique-Jurassic-Park-Background-.jpg");
 	background-size: cover;
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
 }
 
 .App {
@@ -11,55 +18,60 @@ html {
   height: 100vh; */
 }
 
+.img-container {
+	width: 400px;
+	margin: 0 auto;
+}
+
 .image {
-	height: 500px;
+	border: 4px solid yellow;
+	border-radius: 50%;
+	max-width: 100%;
+	object-fit: contain;
+	max-height: 225px;
+	min-height: 225px;
+}
+
+h1 {
+	font-family: "Creepster", cursive;
+	font-size: 40px;
+	color: transparent;
+	background-image: linear-gradient(0deg, #ffde7d, #ff1900);
+	background-size: 100%;
+	background-clip: text;
+	letter-spacing: 2.5px;
+	margin: 40px;
 }
 
 p span {
-	font-size: 70px;
-	color: rgb(44, 130, 2);
-	background-color: whitesmoke;
+	font-size: 40px;
+	/* background-color: rgba(255, 255, 255, 0.352); */
 	width: fit-content;
 	display: inline-flex;
 }
 
 input {
 	border: none;
-	font-size: 35px;
-	background-color: rgba(245, 245, 245, 0.188);
+	font-family: "Sarpanch", sans-serif;
+	font-size: 25px;
+	background-color: rgba(255, 255, 255, 0.071);
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	color: #ffbf00;
 }
 
 button {
-	background-color: rgba(245, 245, 245, 0.336);
-	font-size: 35px;
+	background-color: rgb(255, 0, 0);
+	font-size: 20px;
+	margin: 20px;
+	border: 2px solid rgb(251, 255, 0);
+	font-family: "Sarpanch", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
-	}
-}
-
-.App-header {
-	background-color: #282c34;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
-}
-
-.App-link {
-	color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+p {
+	color: rgb(255, 213, 0);
+	text-shadow: 2px 0 0 red, 0 2px 0 red, -2px 0 0 red, 0 -2px 0 red;
+	font-family: "Bungee Shade", cursive;
+	margin: 35px;
 }

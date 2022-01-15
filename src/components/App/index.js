@@ -82,11 +82,13 @@ function App() {
 	return (
 		<div className="App">
 			<h1>Find out your cool dinosaur name!</h1>
-			<img className="image" src={dinoURL} alt="A funny dinosaur" />
-			<p>
+			<div className="img-container">
+				<img className="image" src={dinoURL} alt="A funny dinosaur" />
+			</div>
+			{/* <p>
 				{" "}
 				<span>{textInput}</span>{" "}
-			</p>
+			</p> */}
 			<p>
 				<span>{dinoName}</span>
 			</p>
